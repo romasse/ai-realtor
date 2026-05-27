@@ -20,7 +20,7 @@ import {
   Sparkles,
 } from "lucide-react";
 
-const TELEGRAM = "https://t.me/Dnipro_rentBot";
+const TELEGRAM = "https://t.me/romasio";
 const INSTAGRAM = "https://instagram.com/roman.shabat";
 
 const fade = {
