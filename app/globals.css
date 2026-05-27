@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #05070d;
+  --panel: rgba(255, 255, 255, 0.065);
+  --gold: #d9a441;
+  --gold2: #f4d58a;
+  --cyan: #26d9ff;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a { text-decoration: none; }
+
+::selection {
+  background: rgba(217, 164, 65, .35);
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(38,217,255,.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(38,217,255,.08) 1px, transparent 1px);
+  background-size: 46px 46px;
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #fff1bd 0%, #d9a441 45%, #8a5b12 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  backdrop-filter: blur(18px);
+}
+
+.glow {
+  box-shadow: 0 0 70px rgba(38,217,255,.14);
+}
+
+.noise:before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: .06;
+  background-image: radial-gradient(#fff 1px, transparent 1px);
+  background-size: 4px 4px;
+  z-index: 50;
+}
+
+@media (max-width: 640px) {
+  .mobile-title { font-size: 46px !important; }
+}
